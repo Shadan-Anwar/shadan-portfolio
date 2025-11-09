@@ -1,0 +1,129 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useUser } from "../../context/Context";
+import { useInView } from "react-intersection-observer";
+import { Github, Code2, ExternalLink } from "lucide-react";
+
+function Projects() {
+  const { ref, inView } = useInView({ triggerOnce: true });
+  const { getProjects, projects } = useUser();
+  const [loading, setLoading] = useState(false);
+  const [fetched, setFetched] = useState(false);
+
+  useEffect(() => {
+    if (inView && !fetched) {
+      setLoading(true);
+      getProjects().finally(() => setLoading(false));
+      setFetched(true);
+    }
+  }, [inView, fetched, getProjects]);
+
+  return (
+    <section ref={ref} className="w-full px-6 py-12 bg-transparent">
+      <div className="max-w-6xl mx-auto">
+        {!loading && (
+          <div className="pb-6">
+            <h2 className="text-3xl md:text-3xl text-center mb-4 text-[var(--heading-color)]">
+              Projects
+            </h2>
+            <div className="w-40 h-1 bg-gradient-to-r from-emerald-400 via-purple-500 to-pink-500 rounded-full mx-auto mt-2 animate-gradient-x" />
+          </div>
+        )}
+
+        {!loading && projects.length === 0 && (
+          <p className="text-center text-[var(--subheading-color)]">
+            No projects data found.
+          </p>
+        )}
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              className="card shadow-sm hover:shadow-lg transition-transform transition-shadow duration-300 rounded-2xl flex flex-col overflow-hidden h-full"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              whileHover={{ scale: 1.03 }}
+            >
+              <div className="relative w-full overflow-hidden">
+                <motion.img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div className="flex flex-col flex-1 justify-between pt-3">
+                <h3 className="text-xl font-semibold text-[var(--heading-color)]">
+                  {project.title}
+                </h3>
+                <div className="mt-5 flex gap-4">
+                  <a
+                    href={`/projects/details/${project._id}-${project.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    rel="noopener noreferrer"
+                    className="relative group text-emerald-600 transition-colors hover:bg-emerald-100 p-1 rounded-full"
+                    title="View Details"
+                  >
+                    <span className="absolute inset-0 rounded-full scale-0 bg-emerald-100 opacity-70 group-hover:scale-100 transition-transform duration-300"></span>
+                    <Code2
+                      size={22}
+                      className="relative z-10 group-hover:text-emerald-800"
+                    />
+                  </a>
+
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative group text-gray-700 transition-colors hover:bg-grey-100 p-1 rounded-full"
+                    title="View Code on GitHub"
+                  >
+                    <span className="absolute inset-0 rounded-full scale-0 bg-gray-200 opacity-70 group-hover:scale-100 transition-transform duration-300"></span>
+                    <Github
+                      size={22}
+                      className="relative z-10 group-hover:text-gray-900"
+                    />
+                  </a>
+
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative group text-pink-600 transition-colors hover:bg-pink-100 p-1 rounded-full"
+                      title="View Live Project"
+                    >
+                      <span className="absolute inset-0 rounded-full scale-0 bg-pink-100 opacity-70 transition-transform duration-300"></span>
+                      <ExternalLink size={22} className="relative z-10" />
+                    </a>
+                  )}
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.techStack.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="inline-block text-xs font-semibold px-3 py-1 rounded-full shadow-sm hover:shadow-md transition"
+                      style={{
+                        backgroundColor: "var(--tag-bg)",
+                        color: "var(--heading-color)",
+                      }}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                 
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;

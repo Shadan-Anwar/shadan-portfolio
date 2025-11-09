@@ -53,6 +53,61 @@ const technologies = [
   { name: "Netlify", icon: "https://cdn.worldvectorlogo.com/logos/netlify.svg" },
   { name: "Vercel", icon: "https://cdn.worldvectorlogo.com/logos/vercel.svg" },
   { name: "Electron", icon: "https://cdn.worldvectorlogo.com/logos/electron-1.svg" },
+
+  // ⚙️ IoT Core Technologies
+  { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+  { name: "ESP32", icon: "https://cdn.worldvectorlogo.com/logos/espressif.svg" },
+  { name: "Raspberry Pi", icon: "https://cdn.worldvectorlogo.com/logos/raspberry-pi.svg" },
+  { name: "MicroPython", icon: "https://cdn.worldvectorlogo.com/logos/micropython.svg" },
+  { name: "C++", icon: "https://cdn.worldvectorlogo.com/logos/c.svg" },
+  { name: "Embedded C", icon: "https://cdn.worldvectorlogo.com/logos/c.svg" },
+  { name: "MQTT", icon: "https://cdn.worldvectorlogo.com/logos/mqtt.svg" },
+  { name: "Node-RED", icon: "https://cdn.worldvectorlogo.com/logos/node-red-1.svg" },
+  { name: "Blynk", icon: "https://cdn.worldvectorlogo.com/logos/blynk.svg" },
+  { name: "ThingSpeak", icon: "https://cdn.worldvectorlogo.com/logos/thingspeak.svg" },
+  { name: "AWS IoT", icon: "https://cdn.worldvectorlogo.com/logos/aws-iot.svg" },
+  { name: "Google Cloud IoT", icon: "https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" },
+  { name: "Azure IoT", icon: "https://cdn.worldvectorlogo.com/logos/microsoft-azure-2.svg" },
+  { name: "Firebase", icon: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg" },
+  { name: "Bluetooth", icon: "https://cdn.worldvectorlogo.com/logos/bluetooth.svg" },
+  { name: "WiFi", icon: "https://cdn.worldvectorlogo.com/logos/wifi-1.svg" },
+  { name: "LoRa", icon: "https://cdn.worldvectorlogo.com/logos/lora.svg" },
+  { name: "Zigbee", icon: "https://cdn.worldvectorlogo.com/logos/zigbee-1.svg" },
+  { name: "Sensors", icon: "https://cdn-icons-png.flaticon.com/512/2972/2972553.png" },
+  { name: "PCB Design", icon: "https://cdn.worldvectorlogo.com/logos/eagle-1.svg" },
+
+  // 🤖 Agentic AI & Machine Learning
+  { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+  { name: "TensorFlow", icon: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" },
+  { name: "PyTorch", icon: "https://cdn.worldvectorlogo.com/logos/pytorch-icon.svg" },
+  { name: "LangChain", icon: "https://cdn.worldvectorlogo.com/logos/langchain.svg" },
+  { name: "LlamaIndex", icon: "https://cdn.worldvectorlogo.com/logos/llama.svg" },
+  { name: "OpenAI", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+  { name: "Hugging Face", icon: "https://cdn.worldvectorlogo.com/logos/huggingface.svg" },
+  { name: "FastAPI", icon: "https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" },
+  { name: "Flask", icon: "https://cdn.worldvectorlogo.com/logos/flask.svg" },
+  { name: "Streamlit", icon: "https://cdn.worldvectorlogo.com/logos/streamlit.svg" },
+  { name: "LangGraph", icon: "https://cdn-icons-png.flaticon.com/512/7478/7478327.png" },
+  { name: "Qdrant", icon: "https://cdn.worldvectorlogo.com/logos/qdrant.svg" },
+  { name: "Pinecone", icon: "https://cdn.worldvectorlogo.com/logos/pinecone.svg" },
+  { name: "Vector Databases", icon: "https://cdn-icons-png.flaticon.com/512/906/906343.png" },
+  { name: "Agentic Systems", icon: "https://cdn-icons-png.flaticon.com/512/4712/4712008.png" },
+  { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/1048/1048949.png" },
+  { name: "LangGraph Agents", icon: "https://cdn-icons-png.flaticon.com/512/4163/4163766.png" },
+
+  // 🧰 Tools & Platforms
+  { name: "VS Code", icon: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" },
+  { name: "Git", icon: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
+  { name: "GitHub", icon: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" },
+  { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker-icon-1.svg" },
+  { name: "Linux", icon: "https://cdn.worldvectorlogo.com/logos/linux-tux.svg" },
+  { name: "JSON", icon: "https://cdn.worldvectorlogo.com/logos/json.svg" },
+  { name: "REST API", icon: "https://cdn.worldvectorlogo.com/logos/api.svg" },
+  { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+  { name: "CSS3", icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+  { name: "JavaScript", icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" }
+
+
 ];
 
 export default technologies;

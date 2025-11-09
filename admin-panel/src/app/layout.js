@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mohd Ismaeel's Portfolio",
+  title: "Shadan Anwar's Portfolio",
   description: "personal portfolio website admin panel.",
   icons: {
     icon: "/favicon.ico",

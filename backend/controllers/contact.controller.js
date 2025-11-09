@@ -8,15 +8,15 @@ const sendEmail = async (email, name) => {
     const response = await axios.post(
       "https://api.brevo.com/v3/smtp/email",
       {
-        sender: { email: process.env.BREVO_EMAIL, name: "Mohd Ismaeel" },
+        sender: { email: process.env.BREVO_EMAIL, name: "Shadan Anwar" },
         to: [{ email, name: displayName }],
         subject: "Thank You for Contacting Us",
         htmlContent: `
           <p>Hi ${displayName},</p>
           <p>Thank you for reaching out! We’ve received your message and will get back to you shortly.</p>
-          <p>Best regards,<br/>MOHD ISMAEEL</p>
+          <p>Best regards,<br/>Shadan Anwar</p>
         `,
-        textContent: `Hi ${displayName},\n\nThank you for reaching out! We’ve received your message and will get back to you shortly.\n\nBest regards,\nMOHD ISMAEEL`,
+        textContent: `Hi ${displayName},\n\nThank you for reaching out! We’ve received your message and will get back to you shortly.\n\nBest regards,\nShadan Anwar`,
       },
       {
         headers: {

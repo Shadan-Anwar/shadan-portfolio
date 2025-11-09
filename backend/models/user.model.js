@@ -3,17 +3,17 @@ import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    default: 'ismaeel_bin_khaleel',
+    default: 'i',
     unique: true,
     required: true,
   },
   name: {
     type: String,
-    default: 'Mohd Ismaeel',
+    default: 'Shadan Anwar',
   },
   password: {
     type: String,
-    default: 'ai@ismaeel',
+    default: '',
     required: true,
   },
 }, { timestamps: true });

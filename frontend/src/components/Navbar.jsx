@@ -30,7 +30,6 @@ function Navbar() {
             Home
           </span>
         </Link>
-
         <div className="relative group cursor-pointer">
           <ThemeToggle />
           <span

@@ -98,6 +98,7 @@ const technologies = [
   { name: "LangGraph Agents", icon: "https://cdn-icons-png.flaticon.com/512/4163/4163766.png" },
   { name: "Machine Learning", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSpkMDEJmxC2EpnlySyM2hA5bSPSCrvwwjw&s" },
   { name: "Random Forest", icon: "https://static.vecteezy.com/system/resources/previews/039/202/122/non_2x/random-forest-algorithm-color-icon-illustration-vector.jpg" },
+  { name: "RAG", icon: "https://static.vecteezy.com/system/resources/previews/032/807/338/non_2x/rag-creative-icon-design-free-vector.jpg" },
 
   // 🧰 Tools & Platforms
   { name: "VS Code", icon: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" },

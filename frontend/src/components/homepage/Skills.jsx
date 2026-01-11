@@ -12,11 +12,12 @@ function Skills() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(() => {
-    if (inView && !fetched && !skills) {
+    if (inView && !fetched) {
       setLoading(true);
       getSkills().finally(() => setLoading(false));
       setFetched(true);
     }
+
   }, [inView, fetched, getSkills]);
 
   return (

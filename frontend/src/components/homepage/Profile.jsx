@@ -77,6 +77,7 @@ function Profile() {
             src={profile.image}
             alt={profile.name}
             fill
+
             className="object-cover rounded-full"
           />
         </div>

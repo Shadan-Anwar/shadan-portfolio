@@ -75,8 +75,8 @@ export const Provider = ({ children }) => {
     } catch (err) {
       toast.error("Some error while fetching skills");
     }
-  }; 
-   
+  };
+
   const sendContactMessage = async (name, email, message) => {
     try {
       const res = await sendContactMessageAPI(name, email, message);

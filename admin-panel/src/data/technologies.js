@@ -75,6 +75,8 @@ const technologies = [
   { name: "Zigbee", icon: "https://cdn.worldvectorlogo.com/logos/zigbee-1.svg" },
   { name: "Sensors", icon: "https://cdn-icons-png.flaticon.com/512/2972/2972553.png" },
   { name: "PCB Design", icon: "https://cdn.worldvectorlogo.com/logos/eagle-1.svg" },
+  { name: "Speech Recognition", icon: "https://img.freepik.com/premium-vector/vector-design-speech-recognition-icon-style_822882-208700.jpg" },
+
 
   // 🤖 Agentic AI & Machine Learning
   { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },

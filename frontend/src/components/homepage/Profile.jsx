@@ -47,17 +47,12 @@ function Profile() {
   if (!profile || !profile.image || !profile.name) return null;
 
   const highlights = [
-    "Full Stack Web Developer",
-    "MCA graduate",
-    "Aligarh Muslim University",
-    "Data Structures and Algorithms",
-    "Node.js",
-    "React.js",
-    "Express.js",
-    "MongoDB",
-    "responsive UI development",
-    "REST APIs",
-    "backend scalability",
+    "Agentic AI Developer with 4+ years of experience",
+    "multi-agent orchestration",
+    "RAG-based agent systems",
+    "RAG-based agent systems",
+    "integrating LLMs with external tools, APIs, and vector databases"
+
   ];
 
   return (

@@ -12,7 +12,7 @@ function Education() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(() => {
-    if (inView && !fetched && !education) {
+    if (inView && !fetched) {
       setLoading(true);
       getEducation().finally(() => setLoading(false));
       setFetched(true);

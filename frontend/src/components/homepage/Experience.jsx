@@ -12,7 +12,7 @@ function Experience() {
   const [fetched, setFetched] = useState(false);
 
   useEffect(() => {
-    if (inView && !fetched && !experience) {
+    if (inView && !fetched) {
       setLoading(true);
       getExperience().finally(() => setLoading(false));
       setFetched(true);

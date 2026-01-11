@@ -68,7 +68,7 @@ export const getProjectDetail = async (req, res) => {
 
 export const getSkills = async (req, res) => {
   try {
-    const skills = await Skill.find();
+    const skills = await Skill.find().sort({ createdAt: -1 });
     return res.status(201).json({ message: "Skills fetched", skills });
   } catch (error) {
     console.log(error);

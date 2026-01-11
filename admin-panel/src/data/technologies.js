@@ -96,6 +96,8 @@ const technologies = [
   { name: "Agentic Systems", icon: "https://cdn-icons-png.flaticon.com/512/4712/4712008.png" },
   { name: "LLMs", icon: "https://cdn-icons-png.flaticon.com/512/1048/1048949.png" },
   { name: "LangGraph Agents", icon: "https://cdn-icons-png.flaticon.com/512/4163/4163766.png" },
+  { name: "Machine Learning", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSpkMDEJmxC2EpnlySyM2hA5bSPSCrvwwjw&s" },
+  { name: "Random Forest", icon: "https://static.vecteezy.com/system/resources/previews/039/202/122/non_2x/random-forest-algorithm-color-icon-illustration-vector.jpg" },
 
   // 🧰 Tools & Platforms
   { name: "VS Code", icon: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" },

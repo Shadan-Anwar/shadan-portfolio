@@ -173,8 +173,8 @@ function Projects() {
           ))}
         </div>
 
-        {/* View All Button */}
-        <motion.div
+
+        {projects?.length > 3 && <motion.div
           className="flex justify-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -188,7 +188,7 @@ function Projects() {
             View All Projects
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
-        </motion.div>
+        </motion.div>}
       </div>
     </section>
   );
